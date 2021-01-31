@@ -1,0 +1,59 @@
+.paragraph {
+    font-size: 50px;
+    line-height: 62px;
+    font-family: monospace;
+}
+
+.container {
+    position:absolute;
+    left:400px;
+    width:500px;
+    margin:left;
+}
+
+.main {
+    position:fixed;
+    top:330px;
+    left:400px;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: monospace;
+}
+
+
+.header {
+    position:fixed;
+    top:250px;
+    left:400px;
+    font-size: 30px;
+    line-height: 30px;
+    font-family: monospace;
+}
+
+.links {
+    position:fixed;
+    left:400px;
+    top:130px;
+    font-size: 20px;
+    line-height: 5px;
+    font-family: monospace;
+}
+
+.date {
+    position:fixed;
+    left:400px;
+    top:302px;
+    font-size: 15px;
+    line-height: 5px;
+    font-family: monospace;
+    color:grey
+}
+
+.simplelist {
+    position:fixed;
+    top:450px;
+    left:400px;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: monospace;
+}
