@@ -1,86 +1,100 @@
-body {
-    background:#e5dfdb;
-}
+/*
+Theme Name: cp-minimal
+Theme URI: http://www.cproell.de/wordpress-themes/
+Description: Simple, clean and minimal Blog Theme. It is widget ready and has its own admin panel. You don't have to touch any code to customize it. Features: 2 Columns, CSS Navigation Bar, Sidebar Widget ready, Feedburner Integration, Threaded comment ready, Footer Text, Clean and valid HTML, Custom Admin panel, Custom Logo, Analytics Integration (Google Analytics, Piwik). Requires WP2.9+ and PHP5+
+Version: 1.1.1
+Author: Christian Proell
+Author URI: http://www.cproell.de/
+Tags: black, white, fixed-width, two-columns, right-sidebar, translation-ready
+Text Domain: cp
+*/
 
-body, .post-meta, #top-nav, #footer {
-    font-family: monospace;
-    font: 400 14px monospace;
-}
+/*
+/* ### MAIN SETTINGS ### */
+body{background:#fff;color:#333;font:400 14px/20px "Helvetica Neue","Liberation Sans",Arial,Verdana,Helvetica,FreeSans,sans-serif}
+h1,h2,h3,h4,h5,h6{color:#333}h1{font-size:32px}h2{font-size:28px}h3{font-size:24px}h4{font-size:20px}h5{font-size:16px}h6{font-size:14px}
+a:focus{outline:none}hr{border:0 #ccc solid;border-top-width:1px;clear:both;height:0}ol{list-style:decimal}ul{list-style:none}li{margin-left:30px}p,dl,hr,h1,h2,h3,h4,h5,h6,ol,ul,pre,table,address,fieldset{margin-bottom:20px}a{color:#cc0000;text-decoration:none}a:hover{color:#cc0000;text-decoration:underline}kbd{font-size:10px}q:before,q:after{content:"\0022"}dd{margin-left:20px}pre{font-size:11px;overflow:scroll}
+p img{max-width:100%}
 
-.post-title h1, .post-title h1 a {
-    margin-bottom: 0;
-}
+/* ### PAGE SETTINGS ### */
+#content{margin:20px auto;min-height:400px;padding:0}
+#main{width:640px}
+.col-full{margin:0 auto;width:960px}
+.col-left{float:left}
+.col-right{float:right}
 
-#main {
-    width: 960px;
-}
+/* ### HEADER ### */
+#header{clear:both}
+#logo{float:left;margin:20px 0;width:490px}
+#logo img{margin:10px 0 20px 20px}
+#logo h1{margin:0 0 0 20px}
+#logo p.description{font-size:11px;margin-left:20px}
 
-.post, div.page, #footer {
-    border: none;
-    padding:0;
-}
+/* ### NAVIGATION BARS ### */ 
+#top-nav{clear:both;font-size:10px;font-weight:normal;text-transform:uppercase}
+#top-nav .current_page_item a, #top-nav .current_page_item a:hover{color:#cc0000}
+#sec-nav{clear:both;font-size:12px;font-weight:bold;text-transform:uppercase}
+#sec-nav{border-top:1px dotted #bbb;border-bottom:1px dotted #bbb}
 
-#logo {
-    font-size:80px;
-    margin:0;
-    text-transform:none;
-}
+/* ### NAVIGATION CSS CLASS ### */
+.nav{display:inline-block;line-height:100%;margin:0;padding:7px 6px 0}
 
-#searchform {
-    margin: 20px 0;
-}
+.nav li{float:left;list-style:none;margin:0 5px;padding:0 0 8px;position:relative}
+.nav li:hover > ul{display:block;z-index:9999}
+.nav ul{background:#fff;border:1px solid #b4b4b4;display:none;left:0;margin:0;padding:0;position:absolute;top:25px;width:185px}
+.nav ul a{font-weight:normal}
+.nav ul ul{left:185px;top:-1px}
+.nav ul li{float:none;margin:0;padding:0}
+.nav ul li:hover a, .nav li:hover li a{background:none;border:none;color:#666}
 
-.nav {
-    padding: 0;
-    position: relative;
-    top: -10px;
-    text-transform:none;
-}
+/* ### POSTS ### */
+.post,div.page{border:1px solid #ddd;margin-bottom:20px;padding:30px 30px 10px 30px}
+.post-title h4{color:#333;line-height:32px;padding:30px}
+.post-entry{}
+.post-entry ul li{list-style:disc}
+.post-meta{color:#666;font-size:10px;margin-bottom:20px}
+.post-meta-info{}
+.post-meta-comments{float:right}
+.post-read-more{margin:30px 0 20px 0}
+.post blockquote{border-left:3px solid #ccc;font-size:13px;font-style:italic;margin:15px 30px 15px 10px;padding-left:20px}
+.post acronym,.post abbr{border-bottom:1px dashed #999;cursor:help}
+.wp-caption p{font-size:11px}
+.sticky{background:#fef5be}
+div.attachment{border:1px solid #ddd;margin-bottom:20px;padding:30px 30px 10px 30px}
+p.attachment{text-align:center}
 
-.nav a {
-    padding: 0;
-}
+/* ### POSTS NAVIGATION ### */
+.more-entries{padding:20px 0 40px 0}
 
-#container {
-    margin-top: 40px;
-    margin-left: 250px;
-}
 
-#top-nav {
-    margin-bottom: 40px;
-}
+/* ### WIDGETS ### */
+.widget{border:1px solid #ddd;margin-bottom:20px;padding:20px 0 0 0}
+.widgettitle{font-size:18px;padding:0 20px;margin:0 0 10px 0}
+.widgetcontent{padding:0 10px}
+.widget li{margin-left:10px}
+.widget ul,.widget_recent_comments ul{padding:0!important}
+.widget ul li,.widget_recent_comments ul li{font-size:12px;padding-top:10px}
+.widget ul li ul .children{padding-left:10px}
+.widget select {margin:10px 10px 20px 10px}
+.textwidget{margin-bottom:20px;padding:10px}
+.widgetsearchform{margin-left:10px}
 
-a {
-    color: #4070a0;
-}
 
-a:hover {
-    text-decoration:none;
-    color:#ff00ff;
-    position:relative;
-    top:-1px;
-}
+/* ### FOOTER ### */
+#footer {border:1px solid #ddd;font-size:10px;margin-bottom:20px;min-height:40px}
+#footer p{margin:0 30px;line-height:40px}
+.copyright{color:#999}
 
-#footer {
-    position: fixed;
-    bottom: 2px;
-    right: 4px;
-    margin: 0px;
-    min-height: 0px;
-    color: #a0a0a0;
-}
+/* ### MISCELLANEOUS ### */
+.alignleft{float:left}
+.alignright{float:right}
+.aligncenter{display:block;margin-left:auto;margin-right:auto}
+.error{background:#ffcdd1;border-top:2px solid #e10c0c;border-bottom:2px solid #e10c0c;text-align:left;padding:5px 20px}
+.alert{background:#fef5be;border-top:2px solid #fdd425;border-bottom:2px solid #fdd425;text-align:left;padding:5px 20px}
+.ok{background:#d7f7c4;border-top:2px solid #82cb2f;border-bottom:2px solid #82cb2f;text-align:left;padding:5px 20px}
+.note{background:#efefef;border-top:2px solid #dedede;border-bottom:2px solid #dedede;text-align:left;padding:5px 20px}
+.info{background:#f7fafd;border-top:2px solid #b5d3ff;border-bottom:2px solid #b5d3ff;text-align:left;padding:5px 20px} /* blue */
+.download{background:#f7fafd;border-top:2px solid #82cb2f;border-bottom:2px solid #82cb2f;text-align:left;padding:5px 20px}
 
-#main {
-    float: none;
-    min-height: 0px;
-    margin-bottom:40px;
-}
-
-#content {
-    min-height: 0px;
-}
-
-#top-nav .current_page_item a, #top-nav .current_page_item a:hover {
-    color: #000000;
-}
-
+/* ### CLEARING FLOATS ### */
+html body * dd.clear,html body * div.clear,html body * li.clear,html body * span.clear{background:none;border:0;clear:both;display:block;float:none;font-size:0;height:0;list-style:none;margin:0;overflow:hidden;padding:0;visibility:hidden;width:0}
