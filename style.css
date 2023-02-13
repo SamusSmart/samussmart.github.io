@@ -15,6 +15,7 @@ body{background:#fff;color:#333;font:400 14px/20px "Helvetica Neue","Liberation 
 h1,h2,h3,h4,h5,h6{color:#333}h1{font-size:32px}h2{font-size:28px}h3{font-size:24px}h4{font-size:20px}h5{font-size:16px}h6{font-size:14px}
 a:focus{outline:none}hr{border:0 #ccc solid;border-top-width:1px;clear:both;height:0}ol{list-style:decimal}ul{list-style:none}li{margin-left:30px}p,dl,hr,h1,h2,h3,h4,h5,h6,ol,ul,pre,table,address,fieldset{margin-bottom:20px}a{color:#cc0000;text-decoration:none}a:hover{color:#cc0000;text-decoration:underline}kbd{font-size:10px}q:before,q:after{content:"\0022"}dd{margin-left:20px}pre{font-size:11px;overflow:scroll}
 p img{max-width:100%}
+p {margin: 0}
 
 /* ### PAGE SETTINGS ### */
 #content{margin:20px auto;min-height:400px;padding:0}
