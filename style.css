@@ -96,6 +96,6 @@ p.attachment{text-align:center}
 .note{background:#efefef;border-top:2px solid #dedede;border-bottom:2px solid #dedede;text-align:left;padding:5px 20px}
 .info{background:#f7fafd;border-top:2px solid #b5d3ff;border-bottom:2px solid #b5d3ff;text-align:left;padding:5px 20px} /* blue */
 .download{background:#f7fafd;border-top:2px solid #82cb2f;border-bottom:2px solid #82cb2f;text-align:left;padding:5px 20px}
-.farset{width: 640px;;height:383px}
+.farset{width: 640px;height:383px}
 /* ### CLEARING FLOATS ### */
 html body * dd.clear,html body * div.clear,html body * li.clear,html body * span.clear{background:none;border:0;clear:both;display:block;float:none;font-size:0;height:0;list-style:none;margin:0;overflow:hidden;padding:0;visibility:hidden;width:0}
